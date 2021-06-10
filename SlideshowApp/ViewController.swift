@@ -22,9 +22,9 @@ class ViewController: UIViewController {
     
     func loadImages() {
         self.images = [
-            UIImage(named: "bird")!,
-            UIImage(named: "cat")!,
-            UIImage(named: "dog")!,
+            UIImage(named: "bird.png")!,
+            UIImage(named: "cat.jpeg")!,
+            UIImage(named: "dog.jpeg")!,
         ]
         self.imageCount = self.images.count
     }
