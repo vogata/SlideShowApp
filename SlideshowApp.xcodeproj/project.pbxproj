@@ -13,6 +13,9 @@
 		2922C82B266F71DA00F6A1DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2922C829266F71DA00F6A1DC /* Main.storyboard */; };
 		2922C82D266F71DB00F6A1DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2922C82C266F71DB00F6A1DC /* Assets.xcassets */; };
 		2922C830266F71DB00F6A1DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2922C82E266F71DB00F6A1DC /* LaunchScreen.storyboard */; };
+		29855CA42670D1E6003AA1C7 /* bird.png in Resources */ = {isa = PBXBuildFile; fileRef = 29855CA12670D1E6003AA1C7 /* bird.png */; };
+		29855CA52670D1E6003AA1C7 /* cat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 29855CA22670D1E6003AA1C7 /* cat.jpeg */; };
+		29855CA62670D1E6003AA1C7 /* dog.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 29855CA32670D1E6003AA1C7 /* dog.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2922C82C266F71DB00F6A1DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2922C82F266F71DB00F6A1DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2922C831266F71DB00F6A1DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29855CA12670D1E6003AA1C7 /* bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird.png; sourceTree = SOURCE_ROOT; };
+		29855CA22670D1E6003AA1C7 /* cat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpeg; sourceTree = SOURCE_ROOT; };
+		29855CA32670D1E6003AA1C7 /* dog.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpeg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				2922C823266F71DA00F6A1DC /* AppDelegate.swift */,
+				29855CA12670D1E6003AA1C7 /* bird.png */,
+				29855CA22670D1E6003AA1C7 /* cat.jpeg */,
+				29855CA32670D1E6003AA1C7 /* dog.jpeg */,
 				2922C825266F71DA00F6A1DC /* SceneDelegate.swift */,
 				2922C827266F71DA00F6A1DC /* ViewController.swift */,
 				2922C829266F71DA00F6A1DC /* Main.storyboard */,
@@ -124,6 +133,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29855CA52670D1E6003AA1C7 /* cat.jpeg in Resources */,
+				29855CA42670D1E6003AA1C7 /* bird.png in Resources */,
+				29855CA62670D1E6003AA1C7 /* dog.jpeg in Resources */,
 				2922C830266F71DB00F6A1DC /* LaunchScreen.storyboard in Resources */,
 				2922C82D266F71DB00F6A1DC /* Assets.xcassets in Resources */,
 				2922C82B266F71DA00F6A1DC /* Main.storyboard in Resources */,
