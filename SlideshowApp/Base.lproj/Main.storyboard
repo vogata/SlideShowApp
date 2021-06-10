@@ -16,9 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KVJ-fj-rlE">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KVJ-fj-rlE">
                                 <rect key="frame" x="8" y="52" width="374" height="694"/>
                                 <color key="backgroundColor" systemColor="placeholderTextColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1os-hj-xiW" appends="YES" id="9pr-bk-cnC"/>
+                                </connections>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cwt-ye-vrc">
                                 <rect key="frame" x="16" y="762" width="358" height="40"/>
@@ -69,11 +73,60 @@
                         <outlet property="nextButton" destination="f8O-pL-a98" id="rvF-fc-kgV"/>
                         <outlet property="previousButton" destination="Hdg-mF-QRy" id="85l-Uc-FAW"/>
                         <outlet property="timerButton" destination="kFq-i8-WFp" id="k8p-oB-8A9"/>
+                        <segue destination="0lv-s9-dJy" kind="presentation" identifier="showImageScene" id="8hL-Tn-T2f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1os-hj-xiW">
+                    <connections>
+                        <action selector="tapImage:" destination="BYZ-38-t0r" id="0PJ-Ly-V1a"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="44.927536231884062" y="88.392857142857139"/>
+        </scene>
+        <!--Show View Controller-->
+        <scene sceneID="2xw-Ll-L6w">
+            <objects>
+                <viewController storyboardIdentifier="showImageScene" id="0lv-s9-dJy" customClass="ShowViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gpl-jU-DWc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SGz-ee-gHi">
+                                <rect key="frame" x="8" y="8" width="374" height="684"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzN-9Y-W4I">
+                                <rect key="frame" x="179.66666666666666" y="708" width="31" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="O8G-HR-Euj"/>
+                                </constraints>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <segue destination="9HC-jQ-E23" kind="unwind" unwindAction="unwind:" id="vhn-m2-Kmj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eox-Zd-Yv1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PzN-9Y-W4I" firstAttribute="centerX" secondItem="Gpl-jU-DWc" secondAttribute="centerX" id="6kw-wo-cxg"/>
+                            <constraint firstItem="SGz-ee-gHi" firstAttribute="leading" secondItem="eox-Zd-Yv1" secondAttribute="leading" constant="8" id="Qgd-r4-5Ue"/>
+                            <constraint firstItem="eox-Zd-Yv1" firstAttribute="bottom" secondItem="PzN-9Y-W4I" secondAttribute="bottom" constant="8" id="RcO-OG-FT1"/>
+                            <constraint firstItem="PzN-9Y-W4I" firstAttribute="top" secondItem="SGz-ee-gHi" secondAttribute="bottom" constant="16" id="YKn-3C-hCQ"/>
+                            <constraint firstItem="SGz-ee-gHi" firstAttribute="centerX" secondItem="Gpl-jU-DWc" secondAttribute="centerX" id="mtn-bl-14X"/>
+                            <constraint firstItem="SGz-ee-gHi" firstAttribute="top" secondItem="eox-Zd-Yv1" secondAttribute="top" constant="8" id="pJC-C9-WzL"/>
+                            <constraint firstItem="eox-Zd-Yv1" firstAttribute="trailing" secondItem="SGz-ee-gHi" secondAttribute="trailing" constant="8" id="vN1-4O-lXB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="showImage" destination="SGz-ee-gHi" id="WPV-9I-NoF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5R-8s-Ih8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="9HC-jQ-E23" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="91"/>
         </scene>
     </scenes>
     <resources>

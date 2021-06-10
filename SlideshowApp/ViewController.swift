@@ -33,7 +33,6 @@ class ViewController: UIViewController {
         self.imageSlide.image = self.images[imageIndex]
     }
     
-    // TODO next view
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -74,6 +73,31 @@ class ViewController: UIViewController {
     
     @objc func updateTimer(_ timer : Timer){
         moveDiffPagesImage(1)
+    }
+    
+    @IBAction func tapImage(_ sender: Any) {
+        // スライドショーが動いていると元の画像に戻ってこれないので止めておく
+        timer?.invalidate()
+        timer = nil
+        
+        nextButton.isEnabled = true
+        previousButton.isEnabled = true
+        timerButton.setTitle("再生", for: .normal)
+        
+        performSegue(withIdentifier: "showImageScene", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showImageScene"){
+            let controller: ShowViewController = segue.destination as! ShowViewController
+            // set actions
+            controller.image = self.images[imageIndex]
+            return
+        }
+    }
+
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+        // none
     }
 }
 

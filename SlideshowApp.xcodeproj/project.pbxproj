@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290E381526721627005B0024 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290E381426721627005B0024 /* ShowViewController.swift */; };
 		2922C824266F71DA00F6A1DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922C823266F71DA00F6A1DC /* AppDelegate.swift */; };
 		2922C826266F71DA00F6A1DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922C825266F71DA00F6A1DC /* SceneDelegate.swift */; };
 		2922C828266F71DA00F6A1DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2922C827266F71DA00F6A1DC /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		290E381426721627005B0024 /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		2922C820266F71DA00F6A1DC /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2922C823266F71DA00F6A1DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2922C825266F71DA00F6A1DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				2922C82C266F71DB00F6A1DC /* Assets.xcassets */,
 				2922C82E266F71DB00F6A1DC /* LaunchScreen.storyboard */,
 				2922C831266F71DB00F6A1DC /* Info.plist */,
+				290E381426721627005B0024 /* ShowViewController.swift */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				2922C828266F71DA00F6A1DC /* ViewController.swift in Sources */,
 				2922C824266F71DA00F6A1DC /* AppDelegate.swift in Sources */,
 				2922C826266F71DA00F6A1DC /* SceneDelegate.swift in Sources */,
+				290E381526721627005B0024 /* ShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
